@@ -1,0 +1,7 @@
+{"BarrierStart": "","VersionName": "1.0.0",
+  "BuildHash": "__build_hash__",
+  "BuildShortHash": "__ver_build__",
+  "BuildDate": "__date_build__",
+  "BranchName": "__commit_branch__",
+  "TagName": "__commit_tag__","BarrierEnd": ""
+}

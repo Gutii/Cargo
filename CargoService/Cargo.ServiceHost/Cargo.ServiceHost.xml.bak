@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cargo.ServiceHost</name>
+    </assembly>
+    <members>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.#ctor(MediatR.IMediator,AutoMapper.IMapper)">
+            <summary>
+            Работа с бронированием
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.Info">
+            <summary>
+             Информацмя о сервисе
+            </summary>
+            <returns>Информация о сервсе</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.Tracking(Cargo.Contract.Queries.Bookings.TrackingQuery)">
+            <summary>
+            Получение списка изменений статусов
+            </summary>
+            <param name="query">Запрос</param>
+            <returns>Список накладных</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.Awb(Cargo.Contract.Queries.Bookings.AwbQuery)">
+            <summary>
+            Получение объекта накладной
+            </summary>
+            <param name="query">запрос</param>
+            <returns>Результат обновления: 1- выполнено 0- не выполнено</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.Awbs(Cargo.Contract.Queries.Bookings.AwbsQuery)">
+            <summary>
+            Получение списка накладных
+            </summary>
+            <param name="query">Запрос</param>
+            <returns>Список накладных</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.ReserveAwbNumber(Cargo.Contract.Commands.ReserveAwbNumberCommand)">
+            <summary>
+            Резервирование номера накладной из пула
+            </summary>
+            <param name="command">Команда</param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.SaveAwb(Cargo.Contract.Commands.SaveAwbCommand)">
+            <summary>
+            Сохранение накладной со всеми полями
+            </summary>
+            <param name="command">Команда</param>
+            <returns>Сохраненная накладная</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.BookingsSacNoKk(Cargo.Contract.Queries.Bookings.BookingsSacNoKkQuery)">
+            <summary>
+            Получение списка броней не KK
+            </summary>
+            <param name="query">Запрос</param>
+            <returns>Список брони</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.BookingController.BookingsSacNoKkCount(Cargo.Contract.Queries.Bookings.BookingsSacNoKkQueryCount)">
+            <summary>
+            Получение количетсво броней не KK
+            </summary>
+            <param name="query">Запрос</param>
+            <returns>Количетсво броней</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.FlightScheduleController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{Cargo.ServiceHost.Controllers.FlightScheduleController})">
+            <summary>
+            Рейсы в управлении
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.FlightScheduleController.SaleState(Cargo.Contract.Commands.SaleStateCommand)">
+            <summary>
+            Статус продаж на рейсе.
+            </summary>
+            <param name="command"></param>
+        </member>
+<<<<<<< HEAD
+        <member name="M:Cargo.ServiceHost.Controllers.FlightScheduleController.FlightScheduleWithFilter(Cargo.Contract.Queries.Schedule.FlightSchedulesQuery)">
+=======
+        <member name="M:Cargo.ServiceHost.Controllers.FlightScheduleController.FlightScheduleSaleState(Cargo.Contract.Queries.Schedule.FlightScheduleSaleStateQuery)">
+            <summary>
+            Смена статуса продажи расписания полетов
+            </summary>
+            <returns>Список рейсов из расписания</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.FlightScheduleController.FlightScheduleWithFilter(Cargo.Contract.Queries.Schedule.FlightScheduleWithFilterQuery)">
+>>>>>>> origin/dev
+            <summary>
+            Список рейсов из расписания с фильтром
+            </summary>
+            <returns>Список рейсов из расписания</returns>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.ReportController.GetReportBookingOnFlights(Cargo.Contract.Queries.Report.ReportBookingOnFlightsQuery)">
+            <summary>
+            Бронирование на рейсах
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.ReportController.GetReportBookingsPerPeriod(Cargo.Contract.Queries.Report.ReportBookingsPerPeriodQuery)">
+            <summary>
+            Бронирования за период
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.ReportController.FwbBlankByAwbId(Cargo.Contract.Queries.Report.ReportFwbBlankByAwbIdQuery)">
+            <summary>
+            Получить бланк FWB (в байтах) по ID накладной
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:Cargo.ServiceHost.Controllers.WithoutAutorisationController.FlightSсheduleChange(Cargo.Contract.DTOs.FlightScheduleMessage)">
+            <summary>
+            Изменение рейса в расписании
+            </summary>
+            <param name="flightSheduleChanged"></param>
+        </member>
+    </members>
+</doc>

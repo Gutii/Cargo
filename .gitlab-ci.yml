@@ -1,0 +1,39 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+image: ideal/build-netcore6:1.0.0
+
+before_script:
+  - echo "Before script section"
+
+after_script:
+  - echo "After script section"
+
+build1:
+  stage: build
+  script:
+    - echo "Start build ... "
+    - chmod 777 ./build.sh
+    - ./build.sh
+
+deploy-dev:
+  stage: deploy
+  script:
+    - echo "Start build ... "
+    - chmod 777 ./deploy-dev.sh
+    - ./deploy-dev.sh
+  when: manual
+  needs:
+    - build1
+      
+deploy-prod:
+  stage: deploy
+  script:
+    - echo "Start build ... "
+    - chmod 777 ./deploy-prod.sh
+    - ./deploy-prod.sh
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'master'
+      when: manual
+  needs:
+    - build1

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cargo.Contract", "Cargo.Contract\Cargo.Contract.csproj", "{2879A6D9-120C-4E55-AE1B-67649DFDFE94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cargo.Application", "Cargo.Application\Cargo.Application.csproj", "{A8CB9264-641D-4A33-945F-4E30680C072A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cargo.Infrastructure", "Cargo.Infrastructure\Cargo.Infrastructure.csproj", "{E5748AD6-A2AA-47D4-8863-0AF5B9E5FBA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cargo.ServiceHost", "Cargo.ServiceHost\Cargo.ServiceHost.csproj", "{E126D666-C6B6-4B12-813B-EABD30B92FBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E599896E-820C-4E21-8DCE-30E1AD0292DA}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		..\.gitignore = ..\.gitignore
+		..\.gitlab-ci.yml = ..\.gitlab-ci.yml
+		..\build.sh = ..\build.sh
+		..\deploy-dev.sh = ..\deploy-dev.sh
+		..\deploy-prod.sh = ..\deploy-prod.sh
+		Dockerfile = Dockerfile
+		..\README.md = ..\README.md
+		..\VersionName.json = ..\VersionName.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cargo.Tests", "Cargo.Tests\Cargo.Tests.csproj", "{4ABA63E8-FED7-4449-BE75-867496961D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2879A6D9-120C-4E55-AE1B-67649DFDFE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2879A6D9-120C-4E55-AE1B-67649DFDFE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2879A6D9-120C-4E55-AE1B-67649DFDFE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2879A6D9-120C-4E55-AE1B-67649DFDFE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CB9264-641D-4A33-945F-4E30680C072A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CB9264-641D-4A33-945F-4E30680C072A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CB9264-641D-4A33-945F-4E30680C072A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CB9264-641D-4A33-945F-4E30680C072A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5748AD6-A2AA-47D4-8863-0AF5B9E5FBA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5748AD6-A2AA-47D4-8863-0AF5B9E5FBA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5748AD6-A2AA-47D4-8863-0AF5B9E5FBA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5748AD6-A2AA-47D4-8863-0AF5B9E5FBA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E126D666-C6B6-4B12-813B-EABD30B92FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E126D666-C6B6-4B12-813B-EABD30B92FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E126D666-C6B6-4B12-813B-EABD30B92FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E126D666-C6B6-4B12-813B-EABD30B92FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABA63E8-FED7-4449-BE75-867496961D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABA63E8-FED7-4449-BE75-867496961D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABA63E8-FED7-4449-BE75-867496961D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABA63E8-FED7-4449-BE75-867496961D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C09962F-6891-4E65-9635-73FC2AE1E894}
+	EndGlobalSection
+EndGlobal
